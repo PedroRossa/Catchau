@@ -1,8 +1,9 @@
-const express = require('express')
-const app = express()
-const port = 3000
+const express = require('express');
+const { PythonShell } = require('python-shell');
+require('child_process').spawn('cmd', ['/c', 'dir']);
 
-var PythonShell = require('python-shell');
+const app = express();
+const port = 3000;
 
 app.get('/', (req, res) => res.send('Hello World!'))
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
@@ -10,20 +11,25 @@ app.listen(port, () => console.log(`Example app listening on port ${port}!`))
 
 // https://medium.com/@HolmesLaurence/integrating-node-and-python-6b8454bfc272
 
-app.get('/test', call_test);
 
-function call_test(req, res) {
+var runPythonRoutine = function (request, response) {
+    var PythonShell = require('python-shell');
     var options = {
-        args:
-            [
-                req.query.test1, // starting funds
-                req.query.tes2, // (initial) wager size
-                req.query.test3
-            ]
-    }
+        mode: 'text',
+        pythonPath: 'python',
+        pythonOptions: [],
+        scriptPath: '.',
+        args: ['-s']
+    };
 
-    PythonShell.run('./test.py', options, function (err, data) {
-        if (err) res.send(err);
-        res.send(data.toString())
+    // PythonShell.run('test.py', options, function (err, results) {
+    //     console.log(err);
+    // });
+
+    PythonShell.runString('x=1+1;print(x)', options, function (err) {
+        if (err) throw err;
+        console.log('finished');
     });
 }
+
+app.get('/test', runPythonRoutine);

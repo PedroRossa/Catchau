@@ -9,6 +9,7 @@
   "author": "Pedro Rossa",
   "license": "ISC",
   "dependencies": {
+    "@ionic/app-scripts": "^3.2.0",
     "express": "^4.16.3",
     "python-shell": "^1.0.4"
   }
