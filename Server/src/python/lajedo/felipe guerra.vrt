@@ -1,0 +1,1192 @@
+<VRTDataset rasterXSize="13236" rasterYSize="10273">
+  <SRS>PROJCS["WGS 84 / Pseudo-Mercator",GEOGCS["WGS 84",DATUM["WGS_1984",SPHEROID["WGS 84",6378137,298.257223563,AUTHORITY["EPSG","7030"]],AUTHORITY["EPSG","6326"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4326"]],PROJECTION["Mercator_1SP"],PARAMETER["central_meridian",0],PARAMETER["scale_factor",1],PARAMETER["false_easting",0],PARAMETER["false_northing",0],UNIT["metre",1,AUTHORITY["EPSG","9001"]],AXIS["X",EAST],AXIS["Y",NORTH],EXTENSION["PROJ4","+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs"],AUTHORITY["EPSG","3857"]]</SRS>
+  <GeoTransform>-4.20028e+06, 1.00002, 0, -612144, 0, -1.00001</GeoTransform>
+  <VRTRasterBand band="1" dataType="Byte">
+    <ColorInterp>Red</ColorInterp>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.0.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.1.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="0" xOff="2000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.2.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="0" xOff="4000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.3.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="0" xOff="6000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.4.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="0" xOff="8000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.5.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="0" xOff="10000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.6.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties BlockXSize="1236" DataType="Byte" RasterXSize="1236" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="1236" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="1236" ySize="2000" yOff="0" xOff="12000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.7.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="2000" xOff="0"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.8.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="2000" xOff="2000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.9.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="2000" xOff="4000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.10.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="2000" xOff="6000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.11.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="2000" xOff="8000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.12.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="2000" xOff="10000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.13.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties BlockXSize="1236" DataType="Byte" RasterXSize="1236" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="1236" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="1236" ySize="2000" yOff="2000" xOff="12000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.14.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="4000" xOff="0"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.15.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="4000" xOff="2000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.16.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="4000" xOff="4000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.17.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="4000" xOff="6000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.18.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="4000" xOff="8000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.19.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="4000" xOff="10000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.20.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties BlockXSize="1236" DataType="Byte" RasterXSize="1236" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="1236" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="1236" ySize="2000" yOff="4000" xOff="12000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.21.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="6000" xOff="0"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.22.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="6000" xOff="2000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.23.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="6000" xOff="4000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.24.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="6000" xOff="6000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.25.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="6000" xOff="8000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.26.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="6000" xOff="10000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.27.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties BlockXSize="1236" DataType="Byte" RasterXSize="1236" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="1236" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="1236" ySize="2000" yOff="6000" xOff="12000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.28.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="8000" xOff="0"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.29.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="8000" xOff="2000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.30.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="8000" xOff="4000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.31.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="8000" xOff="6000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.32.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="8000" xOff="8000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.33.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="8000" xOff="10000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.34.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties BlockXSize="1236" DataType="Byte" RasterXSize="1236" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="1236" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="1236" ySize="2000" yOff="8000" xOff="12000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.35.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="273" RasterYSize="273"/>
+      <SrcRect xSize="2000" ySize="273" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="273" yOff="10000" xOff="0"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.36.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="273" RasterYSize="273"/>
+      <SrcRect xSize="2000" ySize="273" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="273" yOff="10000" xOff="2000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.37.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="273" RasterYSize="273"/>
+      <SrcRect xSize="2000" ySize="273" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="273" yOff="10000" xOff="4000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.38.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="273" RasterYSize="273"/>
+      <SrcRect xSize="2000" ySize="273" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="273" yOff="10000" xOff="6000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.39.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="273" RasterYSize="273"/>
+      <SrcRect xSize="2000" ySize="273" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="273" yOff="10000" xOff="8000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.40.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="273" RasterYSize="273"/>
+      <SrcRect xSize="2000" ySize="273" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="273" yOff="10000" xOff="10000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.41.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties BlockXSize="1236" DataType="Byte" RasterXSize="1236" BlockYSize="273" RasterYSize="273"/>
+      <SrcRect xSize="1236" ySize="273" yOff="0" xOff="0"/>
+      <DstRect xSize="1236" ySize="273" yOff="10000" xOff="12000"/>
+    </SimpleSource>
+  </VRTRasterBand>
+  <VRTRasterBand band="2" dataType="Byte">
+    <ColorInterp>Green</ColorInterp>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.0.tif</SourceFilename>
+      <SourceBand>2</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.1.tif</SourceFilename>
+      <SourceBand>2</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="0" xOff="2000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.2.tif</SourceFilename>
+      <SourceBand>2</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="0" xOff="4000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.3.tif</SourceFilename>
+      <SourceBand>2</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="0" xOff="6000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.4.tif</SourceFilename>
+      <SourceBand>2</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="0" xOff="8000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.5.tif</SourceFilename>
+      <SourceBand>2</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="0" xOff="10000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.6.tif</SourceFilename>
+      <SourceBand>2</SourceBand>
+      <SourceProperties BlockXSize="1236" DataType="Byte" RasterXSize="1236" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="1236" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="1236" ySize="2000" yOff="0" xOff="12000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.7.tif</SourceFilename>
+      <SourceBand>2</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="2000" xOff="0"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.8.tif</SourceFilename>
+      <SourceBand>2</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="2000" xOff="2000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.9.tif</SourceFilename>
+      <SourceBand>2</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="2000" xOff="4000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.10.tif</SourceFilename>
+      <SourceBand>2</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="2000" xOff="6000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.11.tif</SourceFilename>
+      <SourceBand>2</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="2000" xOff="8000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.12.tif</SourceFilename>
+      <SourceBand>2</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="2000" xOff="10000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.13.tif</SourceFilename>
+      <SourceBand>2</SourceBand>
+      <SourceProperties BlockXSize="1236" DataType="Byte" RasterXSize="1236" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="1236" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="1236" ySize="2000" yOff="2000" xOff="12000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.14.tif</SourceFilename>
+      <SourceBand>2</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="4000" xOff="0"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.15.tif</SourceFilename>
+      <SourceBand>2</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="4000" xOff="2000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.16.tif</SourceFilename>
+      <SourceBand>2</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="4000" xOff="4000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.17.tif</SourceFilename>
+      <SourceBand>2</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="4000" xOff="6000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.18.tif</SourceFilename>
+      <SourceBand>2</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="4000" xOff="8000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.19.tif</SourceFilename>
+      <SourceBand>2</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="4000" xOff="10000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.20.tif</SourceFilename>
+      <SourceBand>2</SourceBand>
+      <SourceProperties BlockXSize="1236" DataType="Byte" RasterXSize="1236" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="1236" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="1236" ySize="2000" yOff="4000" xOff="12000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.21.tif</SourceFilename>
+      <SourceBand>2</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="6000" xOff="0"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.22.tif</SourceFilename>
+      <SourceBand>2</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="6000" xOff="2000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.23.tif</SourceFilename>
+      <SourceBand>2</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="6000" xOff="4000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.24.tif</SourceFilename>
+      <SourceBand>2</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="6000" xOff="6000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.25.tif</SourceFilename>
+      <SourceBand>2</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="6000" xOff="8000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.26.tif</SourceFilename>
+      <SourceBand>2</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="6000" xOff="10000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.27.tif</SourceFilename>
+      <SourceBand>2</SourceBand>
+      <SourceProperties BlockXSize="1236" DataType="Byte" RasterXSize="1236" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="1236" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="1236" ySize="2000" yOff="6000" xOff="12000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.28.tif</SourceFilename>
+      <SourceBand>2</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="8000" xOff="0"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.29.tif</SourceFilename>
+      <SourceBand>2</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="8000" xOff="2000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.30.tif</SourceFilename>
+      <SourceBand>2</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="8000" xOff="4000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.31.tif</SourceFilename>
+      <SourceBand>2</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="8000" xOff="6000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.32.tif</SourceFilename>
+      <SourceBand>2</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="8000" xOff="8000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.33.tif</SourceFilename>
+      <SourceBand>2</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="8000" xOff="10000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.34.tif</SourceFilename>
+      <SourceBand>2</SourceBand>
+      <SourceProperties BlockXSize="1236" DataType="Byte" RasterXSize="1236" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="1236" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="1236" ySize="2000" yOff="8000" xOff="12000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.35.tif</SourceFilename>
+      <SourceBand>2</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="273" RasterYSize="273"/>
+      <SrcRect xSize="2000" ySize="273" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="273" yOff="10000" xOff="0"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.36.tif</SourceFilename>
+      <SourceBand>2</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="273" RasterYSize="273"/>
+      <SrcRect xSize="2000" ySize="273" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="273" yOff="10000" xOff="2000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.37.tif</SourceFilename>
+      <SourceBand>2</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="273" RasterYSize="273"/>
+      <SrcRect xSize="2000" ySize="273" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="273" yOff="10000" xOff="4000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.38.tif</SourceFilename>
+      <SourceBand>2</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="273" RasterYSize="273"/>
+      <SrcRect xSize="2000" ySize="273" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="273" yOff="10000" xOff="6000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.39.tif</SourceFilename>
+      <SourceBand>2</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="273" RasterYSize="273"/>
+      <SrcRect xSize="2000" ySize="273" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="273" yOff="10000" xOff="8000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.40.tif</SourceFilename>
+      <SourceBand>2</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="273" RasterYSize="273"/>
+      <SrcRect xSize="2000" ySize="273" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="273" yOff="10000" xOff="10000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.41.tif</SourceFilename>
+      <SourceBand>2</SourceBand>
+      <SourceProperties BlockXSize="1236" DataType="Byte" RasterXSize="1236" BlockYSize="273" RasterYSize="273"/>
+      <SrcRect xSize="1236" ySize="273" yOff="0" xOff="0"/>
+      <DstRect xSize="1236" ySize="273" yOff="10000" xOff="12000"/>
+    </SimpleSource>
+  </VRTRasterBand>
+  <VRTRasterBand band="3" dataType="Byte">
+    <ColorInterp>Blue</ColorInterp>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.0.tif</SourceFilename>
+      <SourceBand>3</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.1.tif</SourceFilename>
+      <SourceBand>3</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="0" xOff="2000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.2.tif</SourceFilename>
+      <SourceBand>3</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="0" xOff="4000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.3.tif</SourceFilename>
+      <SourceBand>3</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="0" xOff="6000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.4.tif</SourceFilename>
+      <SourceBand>3</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="0" xOff="8000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.5.tif</SourceFilename>
+      <SourceBand>3</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="0" xOff="10000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.6.tif</SourceFilename>
+      <SourceBand>3</SourceBand>
+      <SourceProperties BlockXSize="1236" DataType="Byte" RasterXSize="1236" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="1236" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="1236" ySize="2000" yOff="0" xOff="12000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.7.tif</SourceFilename>
+      <SourceBand>3</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="2000" xOff="0"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.8.tif</SourceFilename>
+      <SourceBand>3</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="2000" xOff="2000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.9.tif</SourceFilename>
+      <SourceBand>3</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="2000" xOff="4000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.10.tif</SourceFilename>
+      <SourceBand>3</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="2000" xOff="6000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.11.tif</SourceFilename>
+      <SourceBand>3</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="2000" xOff="8000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.12.tif</SourceFilename>
+      <SourceBand>3</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="2000" xOff="10000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.13.tif</SourceFilename>
+      <SourceBand>3</SourceBand>
+      <SourceProperties BlockXSize="1236" DataType="Byte" RasterXSize="1236" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="1236" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="1236" ySize="2000" yOff="2000" xOff="12000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.14.tif</SourceFilename>
+      <SourceBand>3</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="4000" xOff="0"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.15.tif</SourceFilename>
+      <SourceBand>3</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="4000" xOff="2000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.16.tif</SourceFilename>
+      <SourceBand>3</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="4000" xOff="4000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.17.tif</SourceFilename>
+      <SourceBand>3</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="4000" xOff="6000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.18.tif</SourceFilename>
+      <SourceBand>3</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="4000" xOff="8000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.19.tif</SourceFilename>
+      <SourceBand>3</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="4000" xOff="10000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.20.tif</SourceFilename>
+      <SourceBand>3</SourceBand>
+      <SourceProperties BlockXSize="1236" DataType="Byte" RasterXSize="1236" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="1236" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="1236" ySize="2000" yOff="4000" xOff="12000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.21.tif</SourceFilename>
+      <SourceBand>3</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="6000" xOff="0"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.22.tif</SourceFilename>
+      <SourceBand>3</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="6000" xOff="2000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.23.tif</SourceFilename>
+      <SourceBand>3</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="6000" xOff="4000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.24.tif</SourceFilename>
+      <SourceBand>3</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="6000" xOff="6000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.25.tif</SourceFilename>
+      <SourceBand>3</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="6000" xOff="8000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.26.tif</SourceFilename>
+      <SourceBand>3</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="6000" xOff="10000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.27.tif</SourceFilename>
+      <SourceBand>3</SourceBand>
+      <SourceProperties BlockXSize="1236" DataType="Byte" RasterXSize="1236" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="1236" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="1236" ySize="2000" yOff="6000" xOff="12000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.28.tif</SourceFilename>
+      <SourceBand>3</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="8000" xOff="0"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.29.tif</SourceFilename>
+      <SourceBand>3</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="8000" xOff="2000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.30.tif</SourceFilename>
+      <SourceBand>3</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="8000" xOff="4000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.31.tif</SourceFilename>
+      <SourceBand>3</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="8000" xOff="6000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.32.tif</SourceFilename>
+      <SourceBand>3</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="8000" xOff="8000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.33.tif</SourceFilename>
+      <SourceBand>3</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="8000" xOff="10000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.34.tif</SourceFilename>
+      <SourceBand>3</SourceBand>
+      <SourceProperties BlockXSize="1236" DataType="Byte" RasterXSize="1236" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="1236" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="1236" ySize="2000" yOff="8000" xOff="12000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.35.tif</SourceFilename>
+      <SourceBand>3</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="273" RasterYSize="273"/>
+      <SrcRect xSize="2000" ySize="273" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="273" yOff="10000" xOff="0"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.36.tif</SourceFilename>
+      <SourceBand>3</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="273" RasterYSize="273"/>
+      <SrcRect xSize="2000" ySize="273" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="273" yOff="10000" xOff="2000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.37.tif</SourceFilename>
+      <SourceBand>3</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="273" RasterYSize="273"/>
+      <SrcRect xSize="2000" ySize="273" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="273" yOff="10000" xOff="4000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.38.tif</SourceFilename>
+      <SourceBand>3</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="273" RasterYSize="273"/>
+      <SrcRect xSize="2000" ySize="273" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="273" yOff="10000" xOff="6000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.39.tif</SourceFilename>
+      <SourceBand>3</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="273" RasterYSize="273"/>
+      <SrcRect xSize="2000" ySize="273" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="273" yOff="10000" xOff="8000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.40.tif</SourceFilename>
+      <SourceBand>3</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="273" RasterYSize="273"/>
+      <SrcRect xSize="2000" ySize="273" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="273" yOff="10000" xOff="10000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.41.tif</SourceFilename>
+      <SourceBand>3</SourceBand>
+      <SourceProperties BlockXSize="1236" DataType="Byte" RasterXSize="1236" BlockYSize="273" RasterYSize="273"/>
+      <SrcRect xSize="1236" ySize="273" yOff="0" xOff="0"/>
+      <DstRect xSize="1236" ySize="273" yOff="10000" xOff="12000"/>
+    </SimpleSource>
+  </VRTRasterBand>
+  <VRTRasterBand band="4" dataType="Byte">
+    <ColorInterp>Alpha</ColorInterp>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.0.tif</SourceFilename>
+      <SourceBand>4</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.1.tif</SourceFilename>
+      <SourceBand>4</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="0" xOff="2000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.2.tif</SourceFilename>
+      <SourceBand>4</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="0" xOff="4000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.3.tif</SourceFilename>
+      <SourceBand>4</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="0" xOff="6000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.4.tif</SourceFilename>
+      <SourceBand>4</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="0" xOff="8000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.5.tif</SourceFilename>
+      <SourceBand>4</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="0" xOff="10000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.6.tif</SourceFilename>
+      <SourceBand>4</SourceBand>
+      <SourceProperties BlockXSize="1236" DataType="Byte" RasterXSize="1236" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="1236" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="1236" ySize="2000" yOff="0" xOff="12000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.7.tif</SourceFilename>
+      <SourceBand>4</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="2000" xOff="0"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.8.tif</SourceFilename>
+      <SourceBand>4</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="2000" xOff="2000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.9.tif</SourceFilename>
+      <SourceBand>4</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="2000" xOff="4000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.10.tif</SourceFilename>
+      <SourceBand>4</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="2000" xOff="6000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.11.tif</SourceFilename>
+      <SourceBand>4</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="2000" xOff="8000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.12.tif</SourceFilename>
+      <SourceBand>4</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="2000" xOff="10000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.13.tif</SourceFilename>
+      <SourceBand>4</SourceBand>
+      <SourceProperties BlockXSize="1236" DataType="Byte" RasterXSize="1236" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="1236" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="1236" ySize="2000" yOff="2000" xOff="12000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.14.tif</SourceFilename>
+      <SourceBand>4</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="4000" xOff="0"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.15.tif</SourceFilename>
+      <SourceBand>4</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="4000" xOff="2000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.16.tif</SourceFilename>
+      <SourceBand>4</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="4000" xOff="4000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.17.tif</SourceFilename>
+      <SourceBand>4</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="4000" xOff="6000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.18.tif</SourceFilename>
+      <SourceBand>4</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="4000" xOff="8000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.19.tif</SourceFilename>
+      <SourceBand>4</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="4000" xOff="10000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.20.tif</SourceFilename>
+      <SourceBand>4</SourceBand>
+      <SourceProperties BlockXSize="1236" DataType="Byte" RasterXSize="1236" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="1236" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="1236" ySize="2000" yOff="4000" xOff="12000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.21.tif</SourceFilename>
+      <SourceBand>4</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="6000" xOff="0"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.22.tif</SourceFilename>
+      <SourceBand>4</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="6000" xOff="2000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.23.tif</SourceFilename>
+      <SourceBand>4</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="6000" xOff="4000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.24.tif</SourceFilename>
+      <SourceBand>4</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="6000" xOff="6000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.25.tif</SourceFilename>
+      <SourceBand>4</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="6000" xOff="8000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.26.tif</SourceFilename>
+      <SourceBand>4</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="6000" xOff="10000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.27.tif</SourceFilename>
+      <SourceBand>4</SourceBand>
+      <SourceProperties BlockXSize="1236" DataType="Byte" RasterXSize="1236" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="1236" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="1236" ySize="2000" yOff="6000" xOff="12000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.28.tif</SourceFilename>
+      <SourceBand>4</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="8000" xOff="0"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.29.tif</SourceFilename>
+      <SourceBand>4</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="8000" xOff="2000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.30.tif</SourceFilename>
+      <SourceBand>4</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="8000" xOff="4000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.31.tif</SourceFilename>
+      <SourceBand>4</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="8000" xOff="6000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.32.tif</SourceFilename>
+      <SourceBand>4</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="8000" xOff="8000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.33.tif</SourceFilename>
+      <SourceBand>4</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="2000" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="2000" yOff="8000" xOff="10000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.34.tif</SourceFilename>
+      <SourceBand>4</SourceBand>
+      <SourceProperties BlockXSize="1236" DataType="Byte" RasterXSize="1236" BlockYSize="2000" RasterYSize="2000"/>
+      <SrcRect xSize="1236" ySize="2000" yOff="0" xOff="0"/>
+      <DstRect xSize="1236" ySize="2000" yOff="8000" xOff="12000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.35.tif</SourceFilename>
+      <SourceBand>4</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="273" RasterYSize="273"/>
+      <SrcRect xSize="2000" ySize="273" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="273" yOff="10000" xOff="0"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.36.tif</SourceFilename>
+      <SourceBand>4</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="273" RasterYSize="273"/>
+      <SrcRect xSize="2000" ySize="273" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="273" yOff="10000" xOff="2000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.37.tif</SourceFilename>
+      <SourceBand>4</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="273" RasterYSize="273"/>
+      <SrcRect xSize="2000" ySize="273" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="273" yOff="10000" xOff="4000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.38.tif</SourceFilename>
+      <SourceBand>4</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="273" RasterYSize="273"/>
+      <SrcRect xSize="2000" ySize="273" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="273" yOff="10000" xOff="6000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.39.tif</SourceFilename>
+      <SourceBand>4</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="273" RasterYSize="273"/>
+      <SrcRect xSize="2000" ySize="273" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="273" yOff="10000" xOff="8000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.40.tif</SourceFilename>
+      <SourceBand>4</SourceBand>
+      <SourceProperties BlockXSize="2000" DataType="Byte" RasterXSize="2000" BlockYSize="273" RasterYSize="273"/>
+      <SrcRect xSize="2000" ySize="273" yOff="0" xOff="0"/>
+      <DstRect xSize="2000" ySize="273" yOff="10000" xOff="10000"/>
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">felipe guerra.41.tif</SourceFilename>
+      <SourceBand>4</SourceBand>
+      <SourceProperties BlockXSize="1236" DataType="Byte" RasterXSize="1236" BlockYSize="273" RasterYSize="273"/>
+      <SrcRect xSize="1236" ySize="273" yOff="0" xOff="0"/>
+      <DstRect xSize="1236" ySize="273" yOff="10000" xOff="12000"/>
+    </SimpleSource>
+  </VRTRasterBand>
+</VRTDataset>

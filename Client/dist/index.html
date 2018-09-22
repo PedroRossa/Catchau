@@ -1,28 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta content="initial-scale=1, shrink-to-fit=no, width=device-width" name="viewport">
 
-    <!-- CSS -->
-    <!-- Add Material font (Roboto) and Material icon as needed -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i|Roboto+Mono:300,400,700|Roboto+Slab:300,400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta content="initial-scale=1, shrink-to-fit=no, width=device-width" name="viewport">
 
-    <!-- Add Material CSS, replace Bootstrap CSS -->
-    <link href="../node_modules/daemonite-material/css/material.min.css" rel="stylesheet">
-  </head>
-  <body>
+  <!-- CSS -->
+  <!-- Add Material font (Roboto) and Material icon as needed -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i|Roboto+Mono:300,400,700|Roboto+Slab:300,400,700"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <!-- Add Material CSS, replace Bootstrap CSS -->
+  <link href="../node_modules/daemonite-material/css/material.min.css" rel="stylesheet">
+</head>
 
-    <!-- Then Material JavaScript on top of Bootstrap JavaScript -->
-    <script src="../node_modules/daemonite-material/js/material.min.js"></script>
-    <script src="main.js"></script>
-  </body>
+<body>
+
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="./assets/images/sound-waves.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+      Voice Recognition
+    </a>
+    <form class="form-inline">
+      <div>
+        <input id="chbRealtimeProgress" class="custom-control-input" type="checkbox" checked=true>
+        <span class="custom-control-track"></span>
+      </div>
+
+    </form>
+  </nav>
+
+
+  <div class="card m-3" style="width: 18rem;">
+    <div class="card-body">
+      <div id="divServerMessage">
+        <label for="inpUpdateTime">Update time (ms)</label>
+        <input id="inpUpdateTime" type="range" class="custom-range" min="50" max="5000" value="2000">
+        <p id="txtUpdateTimeValue" class="font-italic mb-3">2000</p>
+        <p class="font-weight-bold">Server message: </p>
+        <p id="txtServerMessage" class="font-italic"></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card m-3" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Voice Recognition</h5>
+      <h6 class="card-subtitle mb-2 text-muted">Neural network to detect voices</h6>
+      <div class="custom-file mb-3">
+        <input id="inpTrainFile" type="file" class="custom-file-input" accept=".csv">
+        <label id="lblTrainFile" class="custom-file-label" for="customFile">Choose Train File</label>
+      </div>
+
+      <div class="custom-file mb-3">
+        <input id="inpPredictFile" type="file" class="custom-file-input" accept=".csv">
+        <label id="lblPredictFile" class="custom-file-label" for="customFile">Choose Prediction File</label>
+      </div>
+
+      <button id="btnTrain" type="button" class="btn btn-primary">Train</button>
+    </div>
+  </div>
+
+  <div class="card m-3" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Bands Prediction</h5>
+      <h6 class="card-subtitle mb-2 text-muted">Neural network to predict infrared bands</h6>
+
+
+      <button id="btnTrainBands" type="button" class="btn btn-primary">Train Bands</button>
+    </div>
+  </div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+  <!-- Then Material JavaScript on top of Bootstrap JavaScript -->
+  <script src="../node_modules/daemonite-material/js/material.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
 </html>

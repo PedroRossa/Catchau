@@ -7,6 +7,10 @@ import requests
 trainDataPath = sys.argv[1]
 predictDataPath = sys.argv[2]
 
+# Receber todos os parametros recebidos e setar nos devidos lugares
+# trocar pro KERAS
+# salvar resultado e enviar pro cliente
+
 requests.get('http://localhost:3000/ping', params={'message': 'Start'})
 
 data = pd.read_csv(trainDataPath)
@@ -30,7 +34,7 @@ requests.get('http://localhost:3000/ping', params={'message': 'Start training...
 from sklearn.neural_network import MLPClassifier
 
 classifier = MLPClassifier(
-    hidden_layer_sizes=(5,5),
+    hidden_layer_sizes=(2),
     activation='tanh',  # identity, tanh, relu, logistic
     solver='lbfgs',
     learning_rate_init=0.01,
