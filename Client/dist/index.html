@@ -20,59 +20,379 @@
 
   <nav class="navbar navbar-light bg-light">
     <a class="navbar-brand" href="#">
-      <img src="./assets/images/sound-waves.svg" width="30" height="30" class="d-inline-block align-top" alt="">
-      Voice Recognition
+      <img src="./assets/images/connection.svg" width="30" height="30" class="d-inline-block align-top m-1" alt="">
+      Neural Networks
     </a>
-    <form class="form-inline">
-      <div>
-        <input id="chbRealtimeProgress" class="custom-control-input" type="checkbox" checked=true>
-        <span class="custom-control-track"></span>
-      </div>
-
-    </form>
   </nav>
+<!-- 
+  <div id="mainContent">
+      <div id="HTML_nnNavBar"></div>
+  </div> -->
 
-
-  <div class="card m-3" style="width: 18rem;">
-    <div class="card-body">
-      <div id="divServerMessage">
-        <label for="inpUpdateTime">Update time (ms)</label>
-        <input id="inpUpdateTime" type="range" class="custom-range" min="50" max="5000" value="2000">
-        <p id="txtUpdateTimeValue" class="font-italic mb-3">2000</p>
-        <p class="font-weight-bold">Server message: </p>
-        <p id="txtServerMessage" class="font-italic"></p>
+  <div class="container">
+      <nav>
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <a class="nav-item nav-link active" id="tabVoiceRecognition" data-toggle="tab" href="#divVoiceRecognition"
+                  role="tab" aria-controls="voiceRecognition" aria-selected="true">Voice Recognition</a>
+              <a class="nav-item nav-link" id="tabBandsPrediction" data-toggle="tab" href="#divBandsPrediction" role="tab"
+                  aria-controls="bandsPrediction" aria-selected="false">Bands Prediction</a>
+              <a class="nav-item nav-link disabled" id="tabOthers" data-toggle="tab" href="#divOthers" role="tab"
+                  aria-controls="others" aria-selected="false">Others</a>
+      </nav>
+  
+      <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="divVoiceRecognition" role="tabpanel" aria-labelledby="tabVoiceRecognition">
+              <nav class="navbar navbar-light bg-light">
+                  <a class="navbar-brand" href="#">
+                      <img src="../assets/images/sound-waves.svg" width="30" height="30" class="d-inline-block align-top m-1"
+                          alt="">
+                      Voice Recognition
+                  </a>
+                  <a class="btn  btn-outline-primary" data-toggle="modal" data-target="#voiceRecSettingsModal">
+                      <img src="../assets/images/settings.svg" width="30" height="30" class="d-inline-block align-top"
+                          alt="">
+                  </a>
+              </nav>
+  
+              <div class="modal fade" id="voiceRecSettingsModal" tabindex="-1" role="dialog" aria-labelledby="voiceRecSettingsModal"
+                  aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Settings</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                              </button>
+                          </div>
+                          <div class="modal-body">
+                              <div class="container disabled">
+                                  <div class="custom-control custom-switch m-3">
+                                      <input id="chbRealtimeProgress" class="custom-control-input" type="checkbox">
+                                      <span class="custom-control-track"></span>
+                                      <label class="custom-control-label" for="chbRealtimeProgress">Ping Server</label>
+                                  </div>
+                                  <p class="font-italic mb-3">Time to request a message to server</p>
+                                  <div class="border m-1 p-1">
+                                      <label for="inpUpdateTime">Update time (ms)</label>
+                                      <input id="inpUpdateTime" type="range" class="custom-range disabled" min="50" max="5000"
+                                          value="2000">
+                                      <p id="txtUpdateTimeValue" class="font-italic mb-3">2000</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+  
+              <div class="row">
+                  <div class="col-2">
+                      <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                          <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab"
+                              aria-controls="v-pills-home" aria-selected="true">Train</a>
+                          <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
+                              aria-controls="v-pills-profile" aria-selected="false">Trained Networks</a>
+                      </div>
+                  </div>
+                  <div class="col-10">
+                      <div class="tab-content" id="v-pills-tabContent">
+                          <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                              <!-- Pra deixar como feito adiciona class done, pra deixar como atual em execução, active -->
+                              <!-- Icone de feito: <i class="material-icons">check</i> -->
+                              <div class="container">
+                                  <div class="stepper-horiz">
+                                      <div class="stepper active">
+                                          <div class="stepper-icon">
+                                              <span>1</span>
+                                          </div>
+                                          <span class="stepper-text">Set Data</span>
+                                      </div>
+                                      <div class="stepper">
+                                          <div class="stepper-icon">
+                                              <span>2</span>
+                                          </div>
+                                          <span class="stepper-text">Train</span>
+                                      </div>
+                                      <div class="stepper">
+                                          <div class="stepper-icon">
+                                              <span>3</span>
+                                          </div>
+                                          <span class="stepper-text">Prediction</span>
+                                      </div>
+                                  </div>
+                              </div>
+  
+  
+                              <div class="container">
+                                  <div class="card-deck">
+  
+                                      <div class="card">
+                                          <div class="align-self-center m-2">
+                                              <img class="card-img-top" src="../assets/images/config.svg" width="50"
+                                                  height="50" alt="Card image cap">
+                                          </div>
+                                          <div class="card-body border-top">
+                                              <h5 class="card-title">Set Data</h5>
+                                              <p class="card-text">Set files and neural network options</p>
+  
+                                          </div>
+                                          <div class="card-footer">
+                                              <button id="btnSetData" type="button" class="btn btn-primary" data-toggle="modal"
+                                                  data-target="#vr_configModal">Set
+                                                  Data</button>
+                                          </div>
+                                      </div>
+  
+                                      <div class="card">
+                                          <div class="align-self-center m-2">
+                                              <img class="card-img-top" src="../assets/images/training.svg" width="50"
+                                                  height="50" alt="Card image cap"></div>
+                                          <div class="card-body border-top">
+                                              <h5 class="card-title">Training</h5>
+                                              <p class="card-text">Choose Prediction File</p>
+                                              <div class="custom-file mb-3">
+                                                  <input id="inpTrainFile" type="file" class="custom-file-input" accept=".csv">
+                                                  <label id="lblTrainFile" class="custom-file-label" for="customFile">Choose
+                                                      Train File</label>
+                                              </div>
+                                          </div>
+                                          <div class="card-footer">
+                                              <button id="btnTrain" type="button" class="btn btn-primary align-bottom">Train</button>
+                                          </div>
+                                      </div>
+  
+                                      <div class="card">
+                                          <div class="align-self-center m-2">
+                                              <img class="card-img-top" src="../assets/images/prediction.svg" width="50"
+                                                  height="50" alt="Card image cap">
+                                          </div>
+                                          <div class="card-body border-top">
+                                              <h5 class="card-title">Predict</h5>
+                                              <p class="card-text">Generate predictions in a trained NN</p>
+                                          </div>
+                                          <div class="card-footer">
+                                              <button id="btnPredict" type="button" class="btn btn-primary">Predict</button>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+  
+                          <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                              <div class="card">
+                                  <div class="align-self-center m-2">
+                                      <img class="card-img-top" src="../assets/images/prediction.svg" width="50" height="50"
+                                          alt="Card image cap">
+                                  </div>
+                                  <div class="card-body border-top">
+                                      <h5 class="card-title">Predict</h5>
+                                      <p class="card-text">Generate predictions in a trained NN</p>
+                                  </div>
+                                  <div class="card-footer">
+                                      <button id="btnPredict" type="button" class="btn btn-primary">Predict</button>
+                                  </div>
+                              </div>
+                          </div>
+  
+                      </div>
+                  </div>
+              </div>
+  
+              <div id="divServerMessage" style="display:none;">
+                  <p class="font-weight-bold">Server message: </p>
+                  <div class="border m-1 p-1">
+                      <p id="txtServerMessage" class="font-italic"></p>
+                  </div>
+              </div>
+  
+          </div>
+          <div class="tab-pane fade" id="divBandsPrediction" role="tabpanel" aria-labelledby="tabBandsPrediction">
+              <nav class="navbar navbar-light bg-light">
+                  <a class="navbar-brand" href="#">
+                      <img src="../assets/images/satellite.svg" width="30" height="30" class="d-inline-block align-top"
+                          alt="">
+                      LandSat 8 BandsPredictor
+                  </a>
+              </nav>
+              <div class="card m-3" style="width: 18rem;">
+                  <div class="card-body">
+                      <h5 class="card-title">Bands Prediction</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Neural network to predict infrared bands</h6>
+  
+                      <button id="btnPredict" type="button" class="btn btn-primary">Button</button>
+  
+                  </div>
+              </div>
+          </div>
+          <div class="tab-pane fade" id="divOthers" role="tabpanel" aria-labelledby="tabOthers">...</div>
       </div>
-    </div>
   </div>
-
-  <div class="card m-3" style="width: 18rem;">
-    <div class="card-body">
-      <h5 class="card-title">Voice Recognition</h5>
-      <h6 class="card-subtitle mb-2 text-muted">Neural network to detect voices</h6>
-      <div class="custom-file mb-3">
-        <input id="inpTrainFile" type="file" class="custom-file-input" accept=".csv">
-        <label id="lblTrainFile" class="custom-file-label" for="customFile">Choose Train File</label>
-      </div>
-
-      <div class="custom-file mb-3">
-        <input id="inpPredictFile" type="file" class="custom-file-input" accept=".csv">
-        <label id="lblPredictFile" class="custom-file-label" for="customFile">Choose Prediction File</label>
-      </div>
-
-      <button id="btnTrain" type="button" class="btn btn-primary">Train</button>
-    </div>
-  </div>
-
-  <div class="card m-3" style="width: 18rem;">
-    <div class="card-body">
-      <h5 class="card-title">Bands Prediction</h5>
-      <h6 class="card-subtitle mb-2 text-muted">Neural network to predict infrared bands</h6>
-
-
-      <button id="btnTrainBands" type="button" class="btn btn-primary">Train Bands</button>
-    </div>
-  </div>
-
+  
+    <!-- MODAL TO CONFIGURE Voice Recognition MODAL -->
+    <div id="vr_configModal" class="modal" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Configure Model</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="accordion" id="vr_accordion">
+                  <div class="card">
+                    <div class="card-header" id="vr_initialConfigHeader">
+                      <h5 class="mb-0">
+                        <button class="btn btn-flat-primary" type="button" data-toggle="collapse" data-target="#vr_initialConfigs"
+                          aria-expanded="true" aria-controls="vr_initialConfigs">
+                          General configs
+                        </button>
+                      </h5>
+                    </div>
+      
+                    <div id="vr_initialConfigs" class="collapse" aria-labelledby="vr_initialConfigHeader" data-parent="#vr_accordion">
+                      <div class="card-body">
+                        <div class="form-row">
+                          <div class="col">
+                            <div class="form-group">
+                              <label for="inpModelName">Model Name</label>
+                              <input type="text" class="form-control" id="inpModelName" aria-describedby="modelNameHelp"
+                                placeholder="Name of the model">
+                            </div>
+                          </div>
+                          <div class="col">
+                            <label for="inpTestSize">Test Size</label>
+                            <input type="number" class="form-control" id="inpTestSize" aria-describedby="testSizeHelp" min="0"
+                              max="0.99" step="0.01" placeholder="Test size (cross validation)">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="vr_configFirstLayerHeader">
+                      <h5 class="mb-0">
+                        <button class="btn btn-flat-primary" type="button" data-toggle="collapse" data-target="#vr_configFirstLayer"
+                          aria-expanded="false" aria-controls="vr_configFirstLayer">
+                          First Layer
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="vr_configFirstLayer" class="collapse" aria-labelledby="vr_configFirstLayerHeader" data-parent="#vr_accordion">
+                      <div class="card-body">
+                        <div class="bg-white mb-3 p-3 rounded shadow-1">
+                          <div class="form-row">
+                            <div class="col">
+                              <label for="inpFirstLayerNeurons">Number of Neurons</label>
+                              <input type="number" class="form-control" id="inpFirstLayerNeurons" min="1" max="1000" step="1"
+                                placeholder="Number of Neurons">
+                            </div>
+                            <div class="col">
+                              <label for="inpFirstLayerActivation">Activation Type</label>
+                              <select class="form-control" id="inpFirstLayerActivation" placeholder="Activation Type">
+                                <option>relu</option>
+                                <option>tanh</option>
+                                <option>softmax</option>
+                                <option>sigmoid</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="vr_configHiddenLayersHeader">
+                      <h5 class="mb-0">
+                        <button class="btn btn-flat-primary" type="button" data-toggle="collapse" data-target="#vr_configHiddenLayers"
+                          aria-expanded="false" aria-controls="vr_configHiddenLayers">
+                          Hidden Layers
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="vr_configHiddenLayers" class="collapse" aria-labelledby="vr_configHiddenLayersHeader"
+                      data-parent="#vr_accordion">
+                      <div class="card-body">
+                        <button class="btn btn-primary" type="button"> Add Hidden Layer </button>
+                        <!-- TODO: Use mustache here to add layer elements-->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="vr_modelConfigHeader">
+                      <h5 class="mb-0">
+                        <button class="btn btn-flat-primary" type="button" data-toggle="collapse" data-target="#vr_modelConfig"
+                          aria-expanded="false" aria-controls="vr_modelConfig">
+                          Model Configuration
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="vr_modelConfig" class="collapse" aria-labelledby="vr_modelConfigHeader" data-parent="#vr_accordion">
+                      <div class="card-body">
+      
+                        <div class="form-row">
+                          <div class="col">
+                            <label for="inpOutputActivation">Output Activation Type</label>
+                            <select class="form-control" id="inpOutputActivation" placeholder="Activation Type">
+                              <option>relu</option>
+                              <option>tanh</option>
+                              <option>softmax</option>
+                              <option>sigmoid</option>
+                            </select>
+                          </div>
+                          <div class="col">
+                            <label for="inpModelOptimizer">Model Optimizer</label>
+                            <select class="form-control" id="inpModelOptimizer" placeholder="Activation Type">
+                              <option>adam</option>
+                              <option>other</option>
+                              <option>other_2</option>
+                              <option>other_3</option>
+                            </select>
+                          </div>
+                        </div>
+      
+                        <div class="form-row">
+                          <div class="col">
+                            <label for="inpModelLoss">Model Loss</label>
+                            <select class="form-control" id="inpModelLoss" placeholder="Activation Type">
+                              <option>categorical_crossentropy</option>
+                              <option>binary_categorical_crossentropy</option>
+                              <option>other</option>
+                              <option>other_2</option>
+                            </select>
+                          </div>
+                          <div class="col">
+                            <label for="inpNumberOfEpochs">Number of Epochs</label>
+                            <input type="number" class="form-control" id="inpNumberOfEpochs" min="1" max="1000" step="1"
+                              placeholder="Number of Epochs">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+      
+                <!-- 
+                  modelName = 'voiceRecognition_01'
+                  trainDataPath = '../DATA/voiceRecData.csv'
+                  testSize = 0.33
+                  firstLayerNeurons = 9
+                  firstLayerActivation = 'relu'
+                numberOfHiddenLayers = 2
+                listOfNeuronsHL = [4,5]
+                listOfActivationsHL = ['relu', 'relu']
+                  outputLayerActivation = 'softmax'
+                  modelOptimizer = 'adam'
+                  modelLoss = 'categorical_crossentropy'
+                  numberOfEpochs = 100 
+                -->
+      
+              </div>
+              <div class="modal-footer">
+                <button type="submmit" class="btn btn-primary">Save Model</button>
+              </div>
+            </div>
+          </div>
+        </div>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -82,7 +402,7 @@
 
   <!-- Then Material JavaScript on top of Bootstrap JavaScript -->
   <script src="../node_modules/daemonite-material/js/material.min.js"></script>
-  <script src="main.js"></script>
+  <script src="../src/index.js"></script>
 </body>
 
 </html>

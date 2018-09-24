@@ -1,136 +1,129 @@
-//import _ from 'lodash';
-import $ from 'jquery';
-import axios from 'axios';
-import path from 'path'
+(function NeuralNetworksInit() {
+	//import _ from 'lodash';
+	const $ = require('jquery');
+	const axios = require('axios');
+	const path = require('path');
 
-$(function () {
+	const cachedDOM = (function () {
+		return {
+			$inpTrainFile: $('#inpTrainFile'),
+			$inpPredictFile: $('#inpPredictFile'),
+			$inpUpdateTime: $('#inpUpdateTime'),
 
-	const rootPath = "http://localhost:3000";
+			$lblTrainFile: $('#lblTrainFile'),
+			$lblPredictFile: $('#lblPredictFile'),
 
-	var trainFile, predictFile;
-	var currentServerMessage = "empty";
+			$chbRealtimeProgress: $('#chbRealtimeProgress'),
 
-	var $inpTrainFile = $('#inpTrainFile');
-	var $inpPredictFile = $('#inpPredictFile');
-	var $lblTrainFile = $('#lblTrainFile');
-	var $lblPredictFile = $('#lblPredictFile');
-	var $inpUpdateTime = $('#inpUpdateTime');
-
-	var $chbRealtimeProgress = $('#chbRealtimeProgress');
-
-	$('#btnTrain').on('click', callNN);
-	$('#btnTrainBands').on('click', callNNBands);
-
-	//PRECISA SER FEITO:
-	// - passar parametros de treino da rede (layers, tipo de treino)
-
-	// update value of inputs
-	$inpTrainFile.change(function (e) {
-		trainFile = e.target.files[0];
-		$lblTrainFile.text(e.target.files[0].name);
-	});
-
-	$inpPredictFile.change(function (e) {
-		predictFile = e.target.files[0];
-		$lblPredictFile.text(e.target.files[0].name);
-	});
-
-	$chbRealtimeProgress.on('click', function () {
-		if ($chbRealtimeProgress.prop("checked")) {
-			$('#divServerMessage').show();
-		} else {
-			$('#divServerMessage').hide();
+			$divServerMessage: $('#divServerMessage'),
+			$txtUpdateTimeValue: $("#txtUpdateTimeValue")
 		}
-	});
+	})();
 
-	//This value needs to be the same of $inpUpdateTime
-	var intervalId = setInterval(pingServer, 2000);
+	//POR ALGUM MOTIVO BIZARRO NAO TA CHAMANDO O CONSOLE LOG
+	console.log("A");
+	
+	$(function () {
+		const rootPath = "http://localhost:3000";
 
-	$inpUpdateTime.on('input',function () {
-		var refreshTime = parseInt($inpUpdateTime.val());
-		$("#txtUpdateTimeValue").text(refreshTime);
+		var trainFile, predictFile;
+		var currentServerMessage = "empty";
 
-		//Ping server with the value of inpUpateTime (range input 50 - 5000)
-		clearInterval(intervalId);
-		intervalId = setInterval(pingServer, refreshTime); // Time in milliseconds
-	})
+		$('#btnSetData').on('click', callNN);
+		$('#btnTrainBands').on('click', callNNBands);
 
-	function callNN() {
-		//let url = path.join(rootPath, "voiceRecognition");
-		let url = path.join(rootPath, "send");
+		inputValuesOnChange();
 
-		var formData = new FormData();
-		formData.append('csvFiles', trainFile);
-		formData.append('csvFiles', predictFile);
-		formData.append('text', 'pedrinho');
-
-		axios.post(url, formData, {
-			headers: {
-				'Content-Type': 'multipart/form-data'
+		cachedDOM.$chbRealtimeProgress.on('click', function () {
+			if (cachedDOM.$chbRealtimeProgress.prop("checked")) {
+				cachedDOM.$divServerMessage.show();
+			} else {
+				cachedDOM.$divServerMessage.hide();
 			}
-		})
-			.then(function (response) {
-				console.log(response);
-			})
-			.catch(function (error) {
-				console.log(error);
+		});
+
+		function inputValuesOnChange() {
+			cachedDOM.$inpTrainFile.change(function (e) {
+				trainFile = e.target.files[0];
+				cachedDOM.$lblTrainFile.text(e.target.files[0].name);
 			});
 
-		// axios.get(url, {
-		// 	params: {
-		// 		trainDataPath: "trainPath...",
-		// 		predictDataPath: "predictPath...",
-		// 		numberOfLayers: 2,
-		// 		hiddenLayersSize: 5,
-		// 		activationFunc: "sigmoid",
-		// 		splitTestSize: 0.33
-		// 	}
-		// })
-		// 	.then(function (response) {
-		// 		console.log(response);
-		// 	})
-		// 	.catch(function (error) {
-		// 		console.log(error);
-		// 	})
-		// 	.then(function () {
-		// 		// always executed
-		// 	});
-	}
-
-	function callNNBands() {
-		//let url = path.join(rootPath, "voiceRecognition");
-		let url = path.join(rootPath, "testBands");
-		axios.get(url, {
-		})
-			.then(function (response) {
-				console.log(response);
-			})
-			.catch(function (error) {
-				console.log(error);
+			cachedDOM.$inpPredictFile.change(function (e) {
+				predictFile = e.target.files[0];
+				cachedDOM.$lblPredictFile.text(e.target.files[0].name);
 			});
-	}
-
-	//Criar este sistema de ping no server de forma parametrizavel:
-	// - toggle atualizar em tempo real
-	// - determinar tempo de atualização (em milisegundos)
-
-	function pingServer() {
-		if (!($chbRealtimeProgress.prop("checked"))) {
-			return;
 		}
 
-		let url = path.join(rootPath, "pingClient");
-		axios.get(url, {
+		//This value needs to be the same of $inpUpdateTime
+		var intervalId = setInterval(pingServer, 2000);
+
+		cachedDOM.$inpUpdateTime.on('input', function () {
+			var refreshTime = parseInt(cachedDOM.$inpUpdateTime.val());
+			cachedDOM.$txtUpdateTimeValue.text(refreshTime);
+
+			//Ping server with the value of inpUpateTime (range input 50 - 5000)
+			clearInterval(intervalId);
+			intervalId = setInterval(pingServer, refreshTime); // Time in milliseconds
 		})
-			.then(function (response) {
-				if (currentServerMessage != response.data) {
-					currentServerMessage = response.data;
-					console.log(currentServerMessage);
-					$("#txtServerMessage").text(currentServerMessage);
+
+		function callNN() {
+			//let url = path.join(rootPath, "voiceRecognition");
+			let url = path.join(rootPath, "send");
+
+			var formData = new FormData();
+			formData.append('csvFiles', trainFile);
+			formData.append('csvFiles', predictFile);
+			formData.append('text', 'pedrinho');
+
+			axios.post(url, formData, {
+				headers: {
+					'Content-Type': 'multipart/form-data'
 				}
 			})
-			.catch(function (error) {
-				console.log(error);
-			});
-	}
-});
+				.then(function (response) {
+					console.log(response);
+				})
+				.catch(function (error) {
+					console.log(error);
+				});
+		}
+
+		function callNNBands() {
+			//let url = path.join(rootPath, "voiceRecognition");
+			let url = path.join(rootPath, "testBands");
+			axios.get(url, {
+			})
+				.then(function (response) {
+					console.log(response);
+				})
+				.catch(function (error) {
+					console.log(error);
+				});
+		}
+
+		//Criar este sistema de ping no server de forma parametrizavel:
+		// - toggle atualizar em tempo real
+		// - determinar tempo de atualização (em milisegundos)
+
+		function pingServer() {
+			if (!(cachedDOM.$chbRealtimeProgress.prop("checked"))) {
+				return;
+			}
+
+			let url = path.join(rootPath, "pingClient");
+			axios.get(url, {
+			})
+				.then(function (response) {
+					if (currentServerMessage != response.data) {
+						currentServerMessage = response.data;
+
+						cachedDOM.$divServerMessage.text(currentServerMessage);
+						console.log(currentServerMessage);
+					}
+				})
+				.catch(function (error) {
+					console.log(error);
+				});
+		}
+	});
+})();
