@@ -1,0 +1,98 @@
+<!-- Steps -->
+<!-- Pra deixar como feito adiciona class done, pra deixar como atual em execução, active -->
+<!-- Icone de feito: <i class="material-icons">check</i>-->
+<div class="container" id="newNN_steps">
+	<div class="stepper-horiz">
+		<div id="stpSetData" class="stepper active">
+			<div class="stepper-icon">
+				<i class="material-icons" style="display: none;">check</i>
+				<span>1</span>
+			</div>
+			<span class="stepper-text">Set Data</span>
+		</div>
+		<div id="stpTraining" class="stepper">
+			<div class="stepper-icon">
+				<i class="material-icons" style="display: none;">check</i>
+				<span>2</span>
+			</div>
+			<span class="stepper-text">Train</span>
+		</div>
+		<div id="stpPredict" class="stepper">
+			<div class="stepper-icon">
+				<i class="material-icons" style="display: none;">check</i>
+				<span>3</span>
+			</div>
+			<span class="stepper-text">Prediction</span>
+		</div>
+	</div>
+</div>
+
+<div class="container" id="newNN_div">
+	<div class="card-deck">
+		<div class="card">
+			<!-- <div class="bg-light" style="position: absolute; z-index: 2; width:100%; height:100%; opacity:0.75;">
+					<div style="position: relative; float: left; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+						<i class="material-icons " style="font-size: 70px;">lock</i>
+					</div>
+				</div> -->
+			<div class="align-self-center m-2">
+				<img class="card-img-top" src="../assets/images/config.svg" width="50" height="50" alt="Card image cap" />
+			</div>
+			<div class="card-body border-top">
+				<h5 class="card-title">Set Data</h5>
+				<p class="card-text">Set neural network Model data</p>
+				<span class="chip">
+					<i id="chipDataStatus" class="chip-icon bg-danger">X</i>
+					<p id="chipDataValue" class="mt-3">Data missing</p>
+				</span>
+				<p id="chipTipText" class="font-weight-light font-italic"></p>
+
+			</div>
+			<div class="card-footer">
+				<button id="btnSetData" type="button" class="btn btn-primary" data-toggle="modal" data-target="#configModelModal">Set
+					Data</button>
+				<button id="btnVisualizeData" style="display:none;" type="button" class="btn btn-secondary" data-toggle="modal"
+				 data-target="#visualizeModelModal">Visualize</button>
+			</div>
+		</div>
+		<div class="card">
+			<div class="bg-light" style="position: absolute; z-index: 2; width:100%; height:100%; opacity:0.75;">
+				<div style="position: relative; float: left; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+					<i class="material-icons " style="font-size: 70px;">lock</i>
+				</div>
+			</div>
+			<div class="align-self-center m-2">
+				<img class="card-img-top" src="../assets/images/training.svg" width="50" height="50" alt="Card image cap" />
+			</div>
+			<div class="card-body border-top">
+				<h5 class="card-title">Training</h5>
+				<p class="card-text">Choose Prediction File</p>
+				<div class="custom-file mb-3">
+					<input id="inpTrainFile" type="file" class="custom-file-input" accept=".csv" />
+					<label id="lblTrainFile" class="custom-file-label" for="customFile">Choose
+						Train File</label>
+				</div>
+			</div>
+			<div class="card-footer">
+				<button id="btnTrain" type="button" class="btn btn-primary align-bottom">Train</button>
+			</div>
+		</div>
+		<div class="card">
+			<div class="bg-light" style="position: absolute; z-index: 2; width:100%; height:100%; opacity:0.75;">
+				<div style="position: relative; float: left; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+					<i class="material-icons " style="font-size: 70px;">lock</i>
+				</div>
+			</div>
+			<div class="align-self-center m-2">
+				<img class="card-img-top" src="../assets/images/prediction.svg" width="50" height="50" alt="Card image cap" />
+			</div>
+			<div class="card-body border-top">
+				<h5 class="card-title">Predict</h5>
+				<p class="card-text">Generate predictions in a trained NN</p>
+			</div>
+			<div class="card-footer">
+				<button id="btnPredict" type="button" class="btn btn-primary">Predict</button>
+			</div>
+		</div>
+	</div>
+</div>

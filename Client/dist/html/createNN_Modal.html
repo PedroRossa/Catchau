@@ -1,0 +1,177 @@
+<!-- MODAL TO CONFIGURE Voice Recognition MODAL -->
+<div id="configModelModal" class="modal" tabindex="-1" role="dialog" data-backdrop="static">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title">Configure Model</h5>
+			</div>
+			<div class="modal-body">
+				<div class="accordion" id="accordion">
+					<div class="card">
+						<div class="card-header" id="initialConfigHeader">
+							<h5 class="mb-0">
+								<button class="btn btn-flat-primary" type="button" data-toggle="collapse" data-target="#initialConfigs"
+								 aria-expanded="true" aria-controls="initialConfigs">
+									General configs
+								</button>
+							</h5>
+						</div>
+
+						<div id="initialConfigs" class="collapse" aria-labelledby="initialConfigHeader" data-parent="#accordion">
+							<div class="card-body">
+								<div class="form-row">
+									<div class="col">
+										<div class="form-group">
+											<label for="inpCM_modelName">Model Name</label>
+											<input type="text" class="form-control" value="My Model" id="inpCM_modelName" aria-describedby="modelNameHelp" placeholder="Name of the model">
+										</div>
+									</div>
+									<div class="col">
+										<label for="inpCM_testSize">Test Size</label>
+										<input type="number" class="form-control" id="inpCM_testSize" aria-describedby="testSizeHelp" min="0" max="0.99"
+										 step="0.01" placeholder="Test size (cross validation)">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header" id="configFirstLayerHeader">
+							<h5 class="mb-0">
+								<button class="btn btn-flat-primary" type="button" data-toggle="collapse" data-target="#configFirstLayer"
+								 aria-expanded="false" aria-controls="configFirstLayer">
+									First Layer
+								</button>
+							</h5>
+						</div>
+						<div id="configFirstLayer" class="collapse" aria-labelledby="configFirstLayerHeader" data-parent="#accordion">
+							<div class="card-body">
+								<div id="firstLayerDiv" class="bg-white mb-3 p-3 rounded shadow-1">
+									<!-- layer added here using mustache -->
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header" id="configHiddenLayersHeader">
+							<h5 class="mb-0">
+								<button class="btn btn-flat-primary" type="button" data-toggle="collapse" data-target="#configHiddenLayers"
+								 aria-expanded="false" aria-controls="configHiddenLayers">
+									Hidden Layers
+								</button>
+							</h5>
+						</div>
+						<div id="configHiddenLayers" class="collapse" aria-labelledby="configHiddenLayersHeader" data-parent="#accordion">
+							<div class="card-body">
+								<div id="hiddenLayersDiv" class="bg-white mb-3 p-3 rounded shadow-1">
+									<!-- layer added here using mustache -->
+								</div>
+								<button id="btnAddHiddenLayer" class="btn btn-primary" type="button"> Add Hidden Layer </button>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header" id="modelConfigHeader">
+							<h5 class="mb-0">
+								<button class="btn btn-flat-primary" type="button" data-toggle="collapse" data-target="#modelConfig"
+								 aria-expanded="false" aria-controls="modelConfig">
+									Model Configuration
+								</button>
+							</h5>
+						</div>
+						<div id="modelConfig" class="collapse" aria-labelledby="modelConfigHeader" data-parent="#accordion">
+							<div class="card-body">
+
+								<div class="form-row">
+									<div class="col">
+										<label for="inpCM_outputActivation">Output Activation Type</label>
+										<select class="form-control" id="inpCM_outputActivation" placeholder="Activation Type">
+											<option>relu</option>
+											<option>tanh</option>
+											<option>softmax</option>
+											<option>sigmoid</option>
+										</select>
+									</div>
+									<div class="col">
+										<label for="inpCM_modelOptimizer">Model Optimizer</label>
+										<select class="form-control" id="inpCM_modelOptimizer" placeholder="Activation Type">
+											<option>adam</option>
+											<option>other</option>
+											<option>other_2</option>
+											<option>other_3</option>
+										</select>
+									</div>
+								</div>
+
+								<div class="form-row">
+									<div class="col">
+										<label for="inpCM_modelLoss">Model Loss</label>
+										<select class="form-control" id="inpCM_modelLoss" placeholder="Activation Type">
+											<option>categorical_crossentropy</option>
+											<option>binary_categorical_crossentropy</option>
+											<option>other</option>
+											<option>other_2</option>
+										</select>
+									</div>
+									<div class="col">
+										<label for="inpCM_numberOfEpochs">Number of Epochs</label>
+										<input type="number" class="form-control" id="inpCM_numberOfEpochs" min="1" max="1000" step="1" placeholder="Number of Epochs">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- 
+                    modelName = 'voiceRecognition_01'
+                    trainDataPath = '../DATA/voiceRecData.csv'
+                    testSize = 0.33
+                    firstLayerNeurons = 9
+                    firstLayerActivation = 'relu'
+                  numberOfHiddenLayers = 2
+                  listOfNeuronsHL = [4,5]
+                  listOfActivationsHL = ['relu', 'relu']
+                    outputLayerActivation = 'softmax'
+                    modelOptimizer = 'adam'
+                    modelLoss = 'categorical_crossentropy'
+                    numberOfEpochs = 100 
+                  -->
+
+			</div>
+			<div class="modal-footer">
+				<button id="btnSaveModel" data-dismiss="modal" class="btn btn-primary">Save Model</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script id="nnLayerTemplate" type="x-tmpl-mustache">
+	<div id={{layerId}}>
+		<div class="form-row mt-2">
+			<div class="col">
+				<span class="badge badge-light layer-name">{{name}}</span>
+			</div>
+			<div class="col float-right">
+				<button id="{{onClick.deleteButton.id}}" type="button" class="close" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+		</div>
+		<div class="form-row border">
+			<div class="col">
+				<label>Number of Neurons</label>
+				<input type="number" class="form-control input-layer" id="{{inpLlayerId}}" min="1" max="1000" step="1" placeholder="Number of Neurons">
+			</div>
+			<div class="col">
+				<label>Activation Type</label>
+				<select class="form-control select-layer" id="{{activationId}}" placeholder="Activation Type">
+					<option>relu</option>
+					<option>tanh</option>
+					<option>softmax</option>
+					<option>sigmoid</option>
+				</select>
+			</div>
+		</div>
+		</div>
+</script>

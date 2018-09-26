@@ -1,0 +1,110 @@
+<!-- MODAL TO CONFIGURE Voice Recognition MODAL -->
+<div id="visualizeModelModal" class="modal" tabindex="-1" role="dialog">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title">Model Visualization</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<div class="row border-bottom mx-2">
+					<div class="col-1 mt-2 justify-content-end">
+						<img src="../assets/images/nnVisualizer/name.svg" width="30" height="30" class="d-inline-block m-1" alt="" />
+					</div>
+					<div class="col-4 mt-3 text-right">
+						<label for="vis_modelName">Model Name</label>
+					</div>
+					<div class="col-7">
+						<input disabled class=" form-control" id="vis_modelName" type="text" value="#inpModelName">
+					</div>
+				</div>
+				<div class="row border-bottom mx-2">
+					<div class="col-1 mt-2">
+						<img src="../assets/images/nnVisualizer/test.svg" width="30" height="30" class="d-inline-block m-1" alt="" />
+					</div>
+					<div class="col-4 mt-3 text-right">
+						<label for="vis_testSize">Test Size</label>
+					</div>
+					<div class="col-7">
+						<input disabled class=" form-control" id="vis_testSize" type="number">
+					</div>
+				</div>
+				<div class="row border-bottom mx-2">
+					<div class="col-1 mt-2">
+						<img src="../assets/images/nnVisualizer/layer.svg" width="30" height="30" class="d-inline-block m-1" alt="" />
+					</div>
+					<div class="col-4 mt-3 text-right">
+						<label for="vis_firstLayer">First Layer Neurons</label>
+					</div>
+					<div class="col-7">
+						<input disabled class=" form-control" id="vis_firstLayer" type="number">
+					</div>
+				</div>
+				<div class="row border-bottom mx-2">
+					<div class="col-1 mt-2">
+						<img src="../assets/images/nnVisualizer/activation.svg" width="30" height="30" class="d-inline-block m-1" alt="" />
+					</div>
+					<div class="col-4 mt-3 text-right">
+						<label for="vis_fsActivation">First Layer Activation</label>
+					</div>
+					<div class="col-7">
+						<input disabled class=" form-control" id="vis_fsActivation" type="text">
+					</div>
+				</div>
+
+				<!-- ADD HIDDEN WITH MUSTACHE -->
+
+				<div class="row border-bottom mx-2">
+					<div class="col-1 mt-2">
+						<img src="../assets/images/nnVisualizer/activation.svg" width="30" height="30" class="d-inline-block m-1" alt="" />
+					</div>
+					<div class="col-4 mt-3 text-right">
+						<label for="vis_outputActivation">Output Activation</label>
+					</div>
+					<div class="col-7">
+						<input disabled class=" form-control" id="vis_outputActivation" type="text">
+					</div>
+				</div>
+				<div class="row border-bottom mx-2">
+					<div class="col-1 mt-2">
+						<img src="../assets/images/nnVisualizer/optimizer.svg" width="30" height="30" class="d-inline-block m-1" alt="" />
+					</div>
+					<div class="col-4 mt-3 text-right">
+						<label for="vis_modelOptimizer">Model Optimizer</label>
+					</div>
+					<div class="col-7">
+						<input disabled class=" form-control" id="vis_modelOptimizer" type="text">
+					</div>
+				</div>
+				<div class="row border-bottom mx-2">
+					<div class="col-1 mt-2">
+						<img src="../assets/images/nnVisualizer/loss.svg" width="30" height="30" class="d-inline-block m-1" alt="" />
+					</div>
+					<div class="col-4 mt-3 text-right">
+						<label for="vis_modelLoss">Model Loss</label>
+					</div>
+					<div class="col-7">
+						<input disabled class=" form-control" id="vis_modelLoss" type="text">
+					</div>
+				</div>
+				<div class="row border-bottom mx-2">
+					<div class="col-1 mt-2">
+						<img src="../assets/images/nnVisualizer/epochs.svg" width="30" height="30" class="d-inline-block m-1" alt="" />
+					</div>
+					<div class="col-4 mt-3 text-right">
+						<label for="vis_numberOfEpochs">Number of Epochs</label>
+					</div>
+					<div class="col-7">
+						<input disabled class=" form-control" id="vis_numberOfEpochs" type="number">
+					</div>
+				</div>
+
+
+			</div>
+			<div class="modal-footer">
+			</div>
+		</div>
+	</div>
+</div>

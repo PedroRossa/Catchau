@@ -1,0 +1,51 @@
+<div class="container">
+    <div class="dropdown my-3">
+        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            <img src="../assets/images/sound-waves.svg" width="30" height="30" class="d-inline-block m-1" alt="" />
+            Voice Recognition
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="">
+                <img src="../assets/images/sound-waves.svg" width="30" height="30" class="d-inline-block m-1" alt="" />
+                Voice Recognition
+            </a>
+
+            <a class="dropdown-item" href="">
+                <img src="../assets/images/satellite.svg" width="30" height="30" class="d-inline-block m-1" alt="" />
+                LandSat 8 Bands
+            </a>
+            <a class="dropdown-item disabled" href="#">Other...</a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-2">
+            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab"
+                    aria-controls="v-pills-home" aria-selected="true">Train</a>
+                <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
+                    aria-controls="v-pills-profile" aria-selected="false">Trained Networks</a>
+            </div>
+        </div>
+        <div class="col-10">
+            <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                    <!-- INJECT HTML -->
+                    <div id="HTML_trainNN_Module"></div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                    <!-- INJECT HTML -->
+                    <div id="HTML_trainedNN_Module"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="divServerMessage" style="display:none;">
+        <p class="font-weight-bold">Server message: </p>
+        <div class="border m-1 p-1">
+            <p id="txtServerMessage" class="font-italic"></p>
+        </div>
+    </div>
+</div>
